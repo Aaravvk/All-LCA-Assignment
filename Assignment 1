@@ -1,1 +1,152 @@
+#input
+#Q1
+#initial dictionary
+my_dict={'name':'aarav','age':18,'course':'CSE','division':8,'batch':2}
+print(my_dict)
 
+#output
+{'name': 'aarav', 'age': 18, 'course': 'CSE', 'division': 8, 'batch': 2}
+
+#input
+#adding info
+my_dict['city']= 'Pune'
+print(my_dict)
+
+#output
+'name': 'aarav', 'age': 18, 'course': 'CSE', 'division': 8, 'batch': 2, 'city': 'Pune'}
+
+#input
+#deleting info
+del my_dict['batch']
+print(my_dict)
+
+#output
+{'name': 'aarav', 'age': 18, 'course': 'CSE', 'division': 8, 'city': 'Pune'}
+
+#input
+#Q2
+#converting list to dictionary
+list_1=['name','age','course']
+list_2=['aarav',18,'CSE']
+my_dict=dict(zip(list_1,list_2))
+print(my_dict)
+
+#output
+{'name': 'aarav', 'age': 18, 'course': 'CSE'}
+
+#input
+#Q3
+#sorting elements
+sorted(my_dict)
+
+#output
+['age', 'course', 'name']
+
+#input
+#Q4
+#converting list to dictionary
+my_dict={'name':'aarav','age':18,'course':'CSE'}
+key_list=list(my_dict.keys())
+values_list=list(my_dict.values())
+print(key_list)
+print(values_list)]
+
+#output
+['name', 'age', 'course']
+['aarav', 18, 'CSE']
+
+#input
+#Q5
+#finding mean value of dictionary
+mydict={'mark 1':20,'mark 2':25,'mark 3':27,'mark 4':30}
+mean_value=sum(mydict.values())/len(mydict)
+print(mean_value)
+
+#output
+25.5
+
+#input
+#Q6
+#Displaying items in dictionary
+mydict_={'name':['aarav','yash','neel'],'roll no':[11,12,13],'marks':[20,25,30]}
+print(mydict_['name'][0])
+print(mydict_['roll no'][1])
+print(max(mydict_['marks']))
+
+#output
+aarav
+12
+30
+
+#input
+#Q7
+#calculating frequency
+input_='marshmellow'
+freq={}
+
+for x in input_:
+    freq[x]=freq.get(x,0)+1
+    print(freq)
+
+#output
+{'m': 1}
+{'m': 1, 'a': 1}
+{'m': 1, 'a': 1, 'r': 1}
+{'m': 1, 'a': 1, 'r': 1, 's': 1}
+{'m': 1, 'a': 1, 'r': 1, 's': 1, 'h': 1}
+{'m': 2, 'a': 1, 'r': 1, 's': 1, 'h': 1}
+{'m': 2, 'a': 1, 'r': 1, 's': 1, 'h': 1, 'e': 1}
+{'m': 2, 'a': 1, 'r': 1, 's': 1, 'h': 1, 'e': 1, 'l': 1}
+{'m': 2, 'a': 1, 'r': 1, 's': 1, 'h': 1, 'e': 1, 'l': 2}
+{'m': 2, 'a': 1, 'r': 1, 's': 1, 'h': 1, 'e': 1, 'l': 2, 'o': 1}
+{'m': 2, 'a': 1, 'r': 1, 's': 1, 'h': 1, 'e': 1, 'l': 2, 'o': 1, 'w': 1}
+
+#input
+#Q8
+#tuple of quotient and remainder
+
+num=float(input('numerator: '))
+dom=float(input('denominator: '))
+result=(num/dom,num%dom)
+print('tuple result: ',result)
+
+#output
+numerator:  21
+denominator:  31
+tuple result:  (0.6774193548387096, 21.0)
+
+#input
+#Q9
+from datetime import date
+
+d1 = int(input("Enter day of first date: "))
+m1 = int(input("Enter month of first date: "))
+y1 = int(input("Enter year of first date: "))
+
+date1 = (d1, m1, y1)
+
+d2 = int(input("Enter day of second date: "))
+m2 = int(input("Enter month of second date: "))
+y2 = int(input("Enter year of second date: "))
+
+date2 = (d2, m2, y2)
+
+dt1 = date(y1, m1, d1)
+dt2 = date(y2, m2, d2)
+
+days = abs((dt2 - dt1).days)
+
+print("First date:", date1)
+print("Second date:", date2)
+print("Number of days between the two dates:", days)
+
+#output
+Enter day of first date:  22
+Enter month of first date:  12
+Enter year of first date:  2026
+Enter day of second date:  21
+Enter month of second date:  11
+Enter year of second date:  2026
+First date: (22, 12, 2026)
+Second date: (21, 11, 2026)
+Number of days between the two dates: 31
