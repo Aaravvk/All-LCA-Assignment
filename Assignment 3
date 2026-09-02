@@ -1,0 +1,24 @@
+#input
+a=float(input('enter first side:'))
+b=float(input('enter second side:'))
+c=float(input('enter third side:'))
+
+if a>b and a>c:
+    hyp=a
+    side1,side2=b,c
+elif b>a and b>c:
+    hyp=b
+    side1,side2=a,c
+else:
+    hyp=c
+    side1,side2=a,b
+if side1**2+side2**2==hyp**2:
+   print('The triangle is right angled')
+else:
+   print('the triangle is not right angled')
+
+ #output
+ enter first side: 3
+enter second side: 4
+enter third side: 5
+The triangle is right angled
