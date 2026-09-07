@@ -1,0 +1,43 @@
+#input
+
+matrix1=[
+    [1, 2, 3],
+    [4, 5, 6]
+]
+matrix2=[
+    [7, 8, 9],
+    [10, 11, 12]
+]
+result=[
+    [0, 0, 0],
+    [0, 0, 0]
+]
+
+for x in range(len(matrix1)):
+    for y in range(len(matrix1[0])):
+        result[x][y]=matrix1[x][y]+matrix2[x][y]
+
+print('matrix1:')
+for row in matrix1:
+    print(row)
+print('\nmatrix2:')
+for row in matrix2:
+    print(row)
+
+print('\n sum of matrix1 and matrix2:')
+for row in result:
+    print(row)
+
+#output
+
+matrix1:
+[1, 2, 3]
+[4, 5, 6]
+
+matrix2:
+[7, 8, 9]
+[10, 11, 12]
+
+ sum of matrix1 and matrix2:
+[8, 10, 12]
+[14, 16, 18]
