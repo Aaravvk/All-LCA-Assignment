@@ -45,3 +45,14 @@ plt.figure(figsize=(6.5,5))
 sns.heatmap(correlation, annot=true, cmap='blues', vmin=-1, vmax=1)
 plt.title('correlation heatmap')
 plt.show()
+
+OUTPUT
+Dataset:
+  Students  maths  python  Attendance    city
+0     Amit     75      80          85    pune
+1   bhavna     82      78          90  mumbai
+2   Chetan     68      70          78    pune
+3     Diya     90      92          95  nashik
+4     Esha     72      75          80  mumbai
+5   Farhan     85      88          92    pune
+
